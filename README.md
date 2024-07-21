@@ -1,7 +1,9 @@
 # band-gear-exchange
 Technical Design Document
-Project: Band Gear Exchange Forum by Timo Hyyppä
-Course: Database Systems and Web Programming 2024, Summer
+Project: Band Gear Exchange Forum /Timo Hyyppä
+Course: Database Systems and Web Programming 2024
+Style-formatted document from the following link:
+[BandGearExchangeForum_v1_1.docx](https://github.com/user-attachments/files/16325932/BandGearExchangeForum_v1_1.docx)
 
 Overview
 
@@ -260,7 +262,7 @@ CREATE TABLE Gear
  );
 
 7. BidExchange Table (liitostaulu, to be updated later on)
-
+8. 
 The BidExchange table manages the exchanges between bidders.
 id: A unique identifier for each bid exchange (Primary Key).
 salesBidder: A foreign key referencing the Bidder table (initial bidder).
@@ -282,14 +284,12 @@ CREATE TABLE BidExchange
     FOREIGN KEY(salesBidder) REFERENCES Bidder(id),
     FOREIGN KEY(purchaseBidder) REFERENCES Bidder(id)
 );
-
 The relationships between the tables are as follows:
 Bidder: Represents users in the system. Each bidder can create multiple bid genres and bid headers.
 BidGenre: Categorizes bids and is linked to a specific bidder.
 BidHeader: Contains the main information about a bid, including the initial bidder and the genre of the bid.
 BidContent: Stores the detailed content of each bid and is linked to both the bidder and the bid header.
 BidExchange: Manages the exchanges between bidders, including the details of the equipment offered and requested.
--------------------------------------------
 
 Appendix:
 
@@ -381,6 +381,7 @@ CREATE TABLE BidExchange
   FOREIGN KEY(salesBidder) REFERENCES Bidder(id),
   FOREIGN KEY(purchaseBidder) REFERENCES Bidder(id)
 );
+
 --Explanation for table BidExchange:
 --salesBidder and purchaseBidder columns store the IDs of the bidders involved in the exchange.
 --equipmentOffer describes the equipment offered by the sales bidder.
