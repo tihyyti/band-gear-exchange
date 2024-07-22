@@ -1,6 +1,6 @@
 # band-gear-exchange
 Technical Design Document
-Project: Band Gear Exchange Forum /Timo Hyyppä
+Project: Band Gear Exchange Forum
 Course: Database Systems and Web Programming 2024
 Style-formatted document from the following link:
 [BandGearExchangeForum_v1_1.docx](https://github.com/user-attachments/files/16325932/BandGearExchangeForum_v1_1.docx)
