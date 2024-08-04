@@ -2,9 +2,13 @@
 Band-Gear-Exchange-Forum statusreport 04.08.24:
 
 PostgreSQL db created in my local PC:
+
     - db schema designed and created with primary and foreign keys (9 tables)
+    
     - db is populated with test data
+    
     - db inquiries and sql-views tested (couple of relevant use-cases of the service)
+    
     - first development version of the bgef-db is ready (version 4)
     
 Next steps for db: already coded test-service use-cases as sql-views will be tested
