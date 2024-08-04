@@ -17,6 +17,7 @@ to find out the most feasible use cases for the final bgef-service.
 MS Edge Copilot LLM assisted in development following standard CRUD and Fetch-services.
 These e2e-services are mainly targeted to test the db-schema and support as a prototyping 
 tool in innovation of the final use-cases of BGEF-service:
+
 Flask application: CRUD and Fetch(all and one) use-cases.
 Coded but not tested: model, service, controller and HTML/css-based UI for CRUD and Fetch.
 
