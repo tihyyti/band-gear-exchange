@@ -1,0 +1,22 @@
+
+# bid_header_details.html: Shows detailed information for a specific bid header">
+<!-- templates/bid_header_details.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bid Header Details</title>
+    <!-- Include Bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bid Header Details</h1>
+        <p>Bid ID: {{ bid_header[0] }}</p>
+        <p>Bid Header Text: {{ bid_header[1] }}</p>
+        <p>Bid Content: {{ bid_header[2] }}</p>
+        <p>Start Time: {{ bid_header[3] }}</p>
+        <p>End Time: {{ bid_header[4] }}</p>
+        <!-- Add more details as needed -->
+    </div>
+</body>
+</html>

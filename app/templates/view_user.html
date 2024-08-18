@@ -1,0 +1,19 @@
+
+<!-- Create Jinja2 templates for rendering user-related pages (e.g., user profile) -->
+<!-- templates/user_profile.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    <!-- Include Bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+</head>
+<body>
+    <div class="container">
+        <h1>User Profile</h1>
+        <p>Username: {{ user.userName }}</p>
+        <!-- Other user details here -->
+        <a href="{{ url_for('main.landing_page') }}">Back to Landing Page</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+<!-- gear_details.html: Shows detailed information for a specific gear -->
+<!-- templates/gear_details.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gear Details</title>
+    <!-- Include Bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gear Details</h1>
+        <p>Gear ID: {{ gear[0] }}</p>
+        <p>Brand: {{ gear[1] }}</p>
+        <p>Details: {{ gear[6] }}</p>
+        <p>Name: {{ gear[5] }}</p>
+        <p>Approximate Value: {{ gear[9] }}</p>
+        <p>Status: {{ gear[3] }}</p>
+        <p>Owner: {{ gear[10] }}</p>
+        <p>Comments: {{ gear[11] }}</p>
+        <p>Edited: {{ gear[13] }}</p>
+        <!-- Add more details as needed -->
+    </div>
+</body>
+</html>

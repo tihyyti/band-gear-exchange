@@ -1,0 +1,46 @@
+
+<!-- templates/gear_by_genre.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gear by Genre</title>
+    <!-- Include Bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gear by Genre</h1>
+        {% for genre, gear_items in gear_by_genre %}
+            <h2>{{ genre }}</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Gear Name</th>
+                        <th>Gear Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for gear in gear_items %}
+                        <tr>
+                            <td>{{ gear[0] }}</td>
+                            <td>{{ gear[1] }}</td>
+                            <td>{{ gear[2] }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endfor %}
+    </div>
+
+    <!-- Include jQuery and DataTables scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#bidHeadersTable').DataTable();
+        });
+    </script>
+</body>
+</html>

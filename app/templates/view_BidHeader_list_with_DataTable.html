@@ -1,0 +1,49 @@
+
+<!-- Added the DataTables.js initialization code to the existing bid_headers_list.html template -->
+<!-- templates/bid_headers_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bid Headers List</title>
+    <!-- Include Bootstrap and DataTables styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bid Headers List</h1>
+        <table id="bidHeadersTable" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Bid Header Text</th>
+                    <th>Bid Content</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for bid_header in bid_headers %}
+                    <tr>
+                        <td>{{ bid_header[0] }}</td>
+                        <td>{{ bid_header[1] }}</td>
+                        <td>{{ bid_header[2] }}</td>
+                        <td>{{ bid_header[3] }}</td>
+                        <td>{{ bid_header[4] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Include jQuery and DataTables scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#bidHeadersTable').DataTable();
+        });
+    </script>
+</body>
+</html>
