@@ -7,6 +7,9 @@ BGEF_v5 is total rewrite of the BGEF_v4.
 - test data is new
 - -file structure tree is new
 - BGEF_v5 runs but only only one route (home) is tested
+- MS Edge Copilot LLM assisted in development
+
+
 
 Band-Gear-Exchange-Forum statusreport 04.08.24:
 
