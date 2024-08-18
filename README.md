@@ -1,3 +1,12 @@
+Band-Gear-Exchange-Forum statusreport 18.08.24:
+BGEF_v5 is total rewrite of the BGEF_v4.
+- DB-schema is changed, now 7 tables
+- sql-views are added
+- ORM has removed completely
+- UI-templates are new as well as routes, no models at all used
+- test data is new
+- -file structure tree is new
+- BGEF_v5 runs but only only one route (home) is tested
 
 Band-Gear-Exchange-Forum statusreport 04.08.24:
 
